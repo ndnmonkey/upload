@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+
+<h3>{{ haha }}注册</h3>
+<div>
+    <form method="post" action="{{ url_for('register') }}" enctype="multipart/form-data">
+        用户<input type="text" name="name"><br>
+        <input type="file" size="30" name="file"/>
+        <br>
+{#            <input type="text" class="txt_input" name="name" style="margin-top:15px;"/>#}
+    <input type="submit" value="提交" class="button-new" style="margin-top:15px;"/>
+    </form>
+</div>
+{#<img src="../static/images/zy.png" />#}
+{#'/'     左斜杠#}
+<img src="{{ url_for('static',filename = 'images/zy.png') }}" />
+
+
+</body>
+</html>
